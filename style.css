@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+} 
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: rgb(20, 20, 20);
+}
+
+
+nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.logotipo{
+    display: block;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    display: flex;
+    padding: 0 5px;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(152, 207, 255);
+}
+
+.container{
+    width: 100%;
+    display: block;
+    max-width: 1240px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.features div{
+    width: 300px;
+}
+
+.features div img{
+   padding: 0 100px;
+   margin: 20px;
+}
+
+.features div h3{
+    margin-bottom: 20px;
+}
+
+.fijowhat img{
+    width: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;}
+
+.fondo {
+    border-radius: 10px;
+    text-align: center;
+    padding: 250px 0;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ) ,url(https://www.debate.com.mx/__export/1660843505567/sites/debate/img/2022/08/18/plataformas-de-streaming.jpg_554688468.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 500px;
+}
+
+.pagos {
+ width: 300px;
+}
+
+.pantallas{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pantallash2{
+    padding: 50px 0px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+/* .pantallascont {
+    width: 413px;
+    
+}
+ */
+
+.pantallascont img{
+    width: 300px;
+    margin: 20px;
+    border-radius: 4rem;
+}
+
+.pantallascont:hover{
+    background-color: #0000009a;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+.cuentas{
+    width: 100%;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* .cuentascont {
+    width: 413px;
+}
+ */
+.cuentascont img{
+    width: 300px;
+    margin: 20px;
+    border-radius: 2rem;
+}
+
+.pagosset{
+    width: 100%;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.combos{
+    background-color: #e4e4e4;
+    width: 100%;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.comboscont img{
+    width: 300px;
+    margin: 20px;
+}
+.combosh2{
+    background-color: #e4e4e4;
+    margin: 0;
+    padding: 50px 0px;
+}
+
+.pagosset{
+    width: 100%;
+    max-width: 1240px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pagosset img{
+    width: 100px;
+    margin: 20px;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* SLIDER SHOW CSS*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  color: #2a2a2a;
+}
+
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+
+  width: 1220px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 520px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 520px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 2% 3%;
+  width: auto;
+  height: auto;
+  background: #005d8841;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  background: #005d8896;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    display: none;
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+/* PAGINA DE CONTACTO CSS*/
+
+
+.cajadecontacto{
+    display: flex;
+    justify-content: center;
+}
+
+.cajadecontacto img{
+    vertical-align: sub;
+    width: 80%;
+    border-radius: 2%;
+}
+
+.cajaredes{
+    width: 400px;
+    display: grid;
+}
+
+.cajaredes a{
+    width: 100%;
+    padding: 20px 0px 0px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.cajaredes img{
+    width: 30px;
+}
+.container .telegram{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.container .telegram a{
+    padding: 10px 30px;
+    width: 700px;
+    border-radius: 1rem;
+    border: 5px solid #039be5;
+    text-decoration: none;
+    color: #039be5;
+    font-size: 1.5rem;
+}
+
+.container .telegram img{
+    width: 30px;
+}
