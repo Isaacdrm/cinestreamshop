@@ -25,8 +25,9 @@ nav{
 }
 
 h2{
+    width: 100%;
+    max-width: 1240px;
     text-align: center;
-    margin-top: 30px;
     font-size: 2rem;
 }
 
@@ -69,6 +70,7 @@ a:hover{
     max-width: 1240px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
@@ -108,9 +110,12 @@ a:hover{
  width: 300px;
 }
 
+.buttonh2{
+    margin-top: 30px;
+}
+
 .pantallas{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgba(0,212,255,1) 100%);
+    background-color: #e4e4e4;
     width: 100%;
     max-width: 1240px;
     justify-content: center;
@@ -122,8 +127,7 @@ a:hover{
 
 .pantallash2{
     padding: 50px 0px;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgba(0,212,255,1) 100%);
+    background-color: #e4e4e4;
 }
 
 /* .pantallascont {
@@ -144,8 +148,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgb
     border-radius: 20px;
 }
 
+.vermas {
+    width: 300px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.vermas a{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #5162ed;
+    color:#fff;
+    -webkit-box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
+}
 
 .cuentas{
+    background: #59d2ff;
     width: 100%;
     max-width: 1240px;
     justify-content: center;
@@ -153,7 +177,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,34,174,1) 0%, rgb
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+}
+
+.cuentash2{
+    padding: 50px 0px;
+    background-color: #59d2ff;
 }
 
 /* .cuentascont {
@@ -361,4 +389,61 @@ a.control_next {
 
 .container .telegram img{
     width: 30px;
+}
+
+
+/* CATALOGO DE SERVICIOS*/
+
+
+.imgcatalogo{
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("img/servicios.png");
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 1220px;
+    height: 520px;
+}
+
+.imgcatalogo h2{
+    padding: 250px 0px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.imgcatalogo h2 span{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+
+/*--- RESPONSIVE ALL INDEX,CATALOGO, CONTACTO. ETC...--*/
+
+
+@media only screen and (max-width: 920px){
+
+    #slider img{
+        width: 920px;
+    }
+
+    .features div{
+        width: 220px;
+    }
+
+    .container .pantallascont, .cuentascont, .comboscont{
+        width: 220px;
+        margin: auto;
+    }
+
+    .container .vermas{
+        width: 300px;
+    }
+
+    .container div img{
+        width: 220px;
+    }
 }
