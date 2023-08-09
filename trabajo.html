@@ -6,26 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabaja con nosotros</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
     <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container header">
-          <nav>
-            <a href="index.html"><img class="logotipo" src="img/inicio.png" alt="logo"></a>
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="catalogo.html">Catálogo</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="trabajo.html">Trabaja con nosotros</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="main-header">
+        <a class="main-logo" href="index.html">
+          <img src="img/inicio.png" alt="inicio">
+        </a>
+        <nav id="nav" class="main-nav">
+          <div class="nav-links">
+            <a class="link-item" href="index.html">Inicio</a>
+            <a class="link-item" href="catalogo.html">Catalogo</a>
+            <a class="link-item" href="contacto.html">Contacto</a>
+            <a class="link-item" href="trabajo.html">Trabaja con nosotros</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       </header>
       <center>
         <h1>Trabaja con nosotros</h1>
         <h2>En construccion...</h2>
-        <img src="https://cdni.iconscout.com/illustration/premium/thumb/website-building-3839578-3202880.png" alt="builder">
+        <img width="100%" max-width="300px"; src="https://cdni.iconscout.com/illustration/premium/thumb/website-building-3839578-3202880.png" alt="builder">
     </center>
 
     <div class="fijowhat">
@@ -33,4 +41,5 @@
     </div>
 
 </body>
+<script src="Scripts.js"></script>
 </html>

@@ -9,17 +9,26 @@
     <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
   </head>
   <body>
+    
     <header>
-      <div class="container header">
-        <nav>
-          <a href="index.html"><img class="logotipo" src="img/inicio.png" alt="logo"></a>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="trabajo.html">Trabaja con nosotros</a></li>
-          </ul>
+      <div class="main-header">
+        <a class="main-logo" href="index.html">
+          <img src="img/inicio.png" alt="inicio">
+        </a>
+        <nav id="nav" class="main-nav">
+          <div class="nav-links">
+            <a class="link-item" href="index.html">Inicio</a>
+            <a class="link-item" href="catalogo.html">Catalogo</a>
+            <a class="link-item" href="contacto.html">Contacto</a>
+            <a class="link-item" href="trabajo.html">Trabaja con nosotros</a>
+          </div>
         </nav>
+        <button id="button-menu" class="button-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
         <!--Slider show-->
 
@@ -39,9 +48,6 @@
               <img src="img/BannerIPTV.png" alt="">
             </li>
 
-            <li style="background: #aaa;">
-              <img src="#" alt="">
-            </li>
         </ul>  
       </div>
 

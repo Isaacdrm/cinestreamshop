@@ -18,8 +18,15 @@ nav{
     height: 80px;
 }
 
-.logotipo{
-    display: block;
+header{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+
+}
+
+.main-header .main-logo img{
     width: 20rem;
     border-radius: 10px;
 }
@@ -92,7 +99,7 @@ a:hover{
     position: fixed;
     bottom: 20px;
     right: 10px;
-    z-index: 1000;}
+    z-index: 4000;}
 
 .fondo {
     border-radius: 10px;
@@ -128,6 +135,7 @@ a:hover{
 .pantallash2{
     padding: 50px 0px;
     background-color: #e4e4e4;
+    margin: 0 auto;
 }
 
 /* .pantallascont {
@@ -156,6 +164,7 @@ a:hover{
 }
 
 .vermas a{
+    height: 30px;
     text-decoration: none;
     border-radius: 10px;
     font-size: 1rem;
@@ -182,6 +191,7 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 .cuentash2{
     padding: 50px 0px;
     background-color: #59d2ff;
+    margin: 0 auto;
 }
 
 /* .cuentascont {
@@ -222,7 +232,7 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 }
 .combosh2{
     background-color: #e4e4e4;
-    margin: 0;
+    margin: 0 auto;
     padding: 50px 0px;
 }
 
@@ -398,7 +408,7 @@ a.control_next {
 .imgcatalogo{
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("img/servicios.png");
-    
+    margin: 0 auto;
     
     background-repeat: no-repeat;
     background-position: center;
@@ -430,20 +440,645 @@ a.control_next {
         width: 920px;
     }
 
+
+
+    #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 520px;
+        list-style: none;
+      }
+      
+      #slider ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 393px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+      }
+      
+      a.control_prev, a.control_next {
+        position: absolute;
+        top: 40%;
+        z-index: 999;
+        display: block;
+        padding: 2% 3%;
+        width: auto;
+        height: auto;
+        background: #005d8841;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+
+
     .features div{
         width: 220px;
     }
 
-    .container .pantallascont, .cuentascont, .comboscont{
-        width: 220px;
-        margin: auto;
-    }
+
+    .features div img{
+     
+        padding: 0 70px;
+    
+       }
+
+
+    
 
     .container .vermas{
         width: 300px;
     }
 
-    .container div img{
+    
+
+    .pagosset div img{
+        width: 80px;
+    }
+
+
+    /*RESPONSIVE CATALOGO*/
+
+    .imgcatalogo{
+        background-size: 100%;
+    }
+
+    .imgcatalogo h2{
+        font-size: 2rem;
+        padding: 200px 0px;
+    }
+
+    .pantallascont img{
         width: 220px;
     }
+
+    .cuentascont img{
+        width: 220px;
+    }
+
+    .comboscont img{
+        width: 220px;
+    }
+
+    /*CONTACTOS*/
+
+    .cajaredes img {
+        width: 30px ¡important;
+    }
 }
+
+/*RESPONSIVE 768PX*/
+
+@media only screen and (max-width: 768px){
+
+
+    #slider img{
+        width: 768px;
+    }
+
+    #slider ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 330px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+      }
+
+    .features div{
+        width: 190px;
+    }
+
+   .features div img{
+     
+    padding: 0 50px;
+
+   }
+
+    
+
+    .container .vermas{
+        width: 600px;
+    }
+
+    
+
+    .pagosset div img{
+        width: 80px;
+    }
+
+
+    /*RESPONSIVE CATALOGO*/
+
+    .imgcatalogo{
+        background-size: 100%;
+        height: 330px;
+    }
+
+    .imgcatalogo h2{
+        font-size: 2rem;
+        padding: 140px 0px;
+    }
+
+    .pantallascont img{
+        width: 190px;
+    }
+
+    .cuentascont img{
+        width: 190px;
+    }
+
+    .comboscont img{
+        width: 190px;
+    }
+
+    /*CONTACTOS*/
+
+    .cajaredes img {
+        width: 30px ¡important;
+    }
+
+    .cajaredes a{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .logotipo {width: 100px;}
+
+    #slider img{
+        width: 425px;
+    }
+
+    #slider ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 181px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+      }
+
+    .features div{
+        width: 200px;
+    }
+
+    .features div img{
+     
+        padding: 0 20px;
+    
+       }
+    
+
+    
+
+    .container .vermas{
+        width: 300px;
+    }
+
+    
+
+    .pagosset div img{
+        width: 80px;
+    }
+
+
+    /*RESPONSIVE CATALOGO*/
+
+    .imgcatalogo{
+        background-size: 100%;
+        height: 180px;
+    }
+
+    .imgcatalogo h2{
+        font-size: 1.5rem;
+        padding: 63px 0px;
+    }
+
+    .imgcatalogo h2 span{
+        font-size: 0.7rem;
+    }
+
+    .pantallascont img{
+        width: 100px;
+    }
+
+    .cuentascont img{
+        width: 100px;
+    }
+
+    .comboscont img{
+        width: 100px;
+    }
+
+    /*CONTACTOS*/
+
+    .cajaredes img {
+        width: 30px ¡important;
+    }
+
+    .container .telegram a{
+        font-size: 0.9rem;
+    }
+    
+    .cajaredes a{
+        font-size: 0.5rem;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    h2{
+        width: 100%;
+        max-width: 1240px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    footer p{
+        font-size: 0.8rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 375px){
+
+    .logotipo {width: 100px;}
+
+    #slider img{
+        width: 375px;
+    }
+
+    #slider ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 161px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+      }
+
+    .features div{
+        width: 150px;
+    }
+
+    .features div img{
+     
+        padding: 0 20px;
+    
+       }
+    
+
+    
+
+    .container .vermas{
+        width: 300px;
+    }
+
+    
+
+    .pagosset div img{
+        width: 80px;
+    }
+
+
+    /*RESPONSIVE CATALOGO*/
+
+    .imgcatalogo{
+        background-size: 100%;
+        height: 160px;
+    }
+
+    .imgcatalogo h2{
+        font-size: 1.5rem;
+        padding: 63px 0px;
+    }
+
+    .imgcatalogo h2 span{
+        font-size: 0.7rem;
+    }
+
+    .pantallascont img{
+        width: 100px;
+    }
+
+    .cuentascont img{
+        width: 100px;
+    }
+
+    .comboscont img{
+        width: 100px;
+    }
+
+    /*CONTACTOS*/
+
+    .cajaredes img {
+        width: 20px ¡important;
+    }
+
+    .container .telegram a{
+        font-size: 0.9rem;
+    }
+    
+    .cajaredes a{
+        font-size: 0.5rem;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    h2{
+        width: 100%;
+        max-width: 1240px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    footer p{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+
+/*MENU DE HAMBURGUESA*/
+
+
+.main-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.4rem;
+  }
+  
+  .main-header .main-nav a{
+    text-decoration: none;
+  }
+
+  .main-header .main-nav a:hover{
+    color: #5162ed;
+  }
+
+
+  .main-logo {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    z-index: 100;
+    background-color: rgba(0, 162, 255, 0.589);
+  }
+  
+  .main-nav.show {
+    margin-left: 0;
+  }
+  
+  .nav-links {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: #005ed8;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column; /* Pondrá un span debajo del otro*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* 
+    Dibujamos una línea recta por cada span creando el tipico menu hamburguesa
+  */
+  
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #005ed8;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  
+  /* 
+    con los span dibujamos un icono de cerrar 
+    para mostrar cuándo la navegación este abierta 
+  */
+  
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+  
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.4rem;
+  }
+  
+  .main-logo {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    background-color: rgba(0, 162, 255, 0.589);
+    z-index: 100;
+  }
+  
+  .main-nav.show {
+    margin-left: 0;
+    z-index: 3000;
+  }
+  
+  .nav-links {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item {
+    margin-top: 2rem;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .link-item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  
+  .link-item:hover::after {
+    width: 100%;
+  }
+  
+  .button-menu {
+    z-index: 3000;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #444444;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+  
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .button-menu {
+      display: none;
+    }
+  
+    .main-logo {
+      flex-basis: 30%;
+    }
+  
+    .main-nav {
+      position: static;
+      margin-left: 0;
+      flex-basis: 70%;
+      height: 100%;
+    }
+  
+    .nav-links {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      background: white;
+    }
+  
+    .link-item {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 2rem;
+    }
+  }
