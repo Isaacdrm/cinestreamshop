@@ -94,6 +94,10 @@ a:hover{
     margin-bottom: 20px;
 }
 
+.features div p{
+    padding: 10px;
+}
+
 .fijowhat img{
     width: 75px;
     position: fixed;
@@ -112,6 +116,40 @@ a:hover{
     width: 100%;
     height: 500px;
 }
+
+figure{
+    position: relative;
+    transition: all 500ms ease-out;
+}
+figure div{
+    
+    position: absolute;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+figure:hover > div{
+    width: 300px;
+    margin: 20px;
+    border-radius:4rem;
+    height: -webkit-fill-available;
+    opacity: 1;
+    visibility: visible;
+    color: #fff;
+    padding: 6rem 2rem;
+}
+
+figure:hover > div p{
+    text-align: initial;
+}
+
+
 
 .pagos {
  width: 300px;
@@ -133,9 +171,18 @@ a:hover{
 }
 
 .pantallash2{
-    padding: 50px 0px;
+    padding: 50px 0px 0px;
     background-color: #e4e4e4;
     margin: 0 auto;
+}
+
+.pantallasp{
+    background-color: #e4e4e4;
+    text-align: center;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 20px 52px;
 }
 
 /* .pantallascont {
@@ -150,16 +197,11 @@ a:hover{
     border-radius: 4rem;
 }
 
-.pantallascont:hover{
-    background-color: #0000009a;
-    color: #fff;
-    border-radius: 20px;
-}
 
 .vermas {
     width: 300px;
     display: flex;
-    margin-bottom: 30px;
+    margin: 30px 0px;
     justify-content: center;
 }
 
@@ -189,9 +231,18 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
 .cuentash2{
-    padding: 50px 0px;
+    padding: 50px 0px 0px;
     background-color: #59d2ff;
     margin: 0 auto;
+}
+
+.cuentasp{
+    background-color: #59d2ff;
+    text-align: center;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 20px 52px;
 }
 
 /* .cuentascont {
@@ -201,7 +252,7 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 .cuentascont img{
     width: 300px;
     margin: 20px;
-    border-radius: 2rem;
+    border-radius: 4rem;
 }
 
 .pagosset{
@@ -227,13 +278,23 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
 .comboscont img{
+    border-radius: 4rem;
     width: 300px;
     margin: 20px;
 }
 .combosh2{
     background-color: #e4e4e4;
     margin: 0 auto;
-    padding: 50px 0px;
+    padding: 50px 0px 0px;
+}
+
+.combosp{
+    background-color: #e4e4e4;
+    text-align: center;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 20px 52px;
 }
 
 .pagosset{
@@ -378,6 +439,10 @@ a.control_next {
     font-weight: bold;
 }
 
+.none {
+    display: none;
+}
+
 .cajaredes img{
     width: 30px;
 }
@@ -491,9 +556,20 @@ a.control_next {
      
         padding: 0 70px;
     
-       }
+    }
 
+    figure:hover > div{
+        width: 220px;
+        margin: 20px;
+        border-radius:4rem;
+        padding: 4rem 1rem;
+        font-size: 0.7rem;
+        border-radius: 3rem;
+    }
 
+    figure:hover > div h2{
+        font-size: 1.5rem;
+    }
     
 
     .container .vermas{
@@ -520,14 +596,17 @@ a.control_next {
 
     .pantallascont img{
         width: 220px;
+        border-radius: 3rem;
     }
 
     .cuentascont img{
         width: 220px;
+        border-radius: 3rem;
     }
 
     .comboscont img{
         width: 220px;
+        border-radius: 3rem;
     }
 
     /*CONTACTOS*/
@@ -569,7 +648,19 @@ a.control_next {
 
    }
 
-    
+   figure:hover > div{
+    width: 190px;
+    margin: 20px;
+    padding: 4rem 1rem;
+    font-size: 0.7rem;
+    border-radius: 3rem;
+}
+
+figure:hover > div h2{
+    font-size: 1.2rem;
+}
+
+
 
     .container .vermas{
         width: 600px;
@@ -619,7 +710,9 @@ a.control_next {
 
 @media only screen and (max-width: 425px){
 
-    .logotipo {width: 100px;}
+    .logotipo {
+        width: 100px;
+    }
 
     #slider img{
         width: 425px;
@@ -643,16 +736,39 @@ a.control_next {
     }
 
     .features div img{
-     
         padding: 0 20px;
-    
        }
     
+    figure:hover > div{
+        width: 150px;
+        margin: 20px;
+        padding: 1rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 2rem;
+    }
 
+    figure:hover > div h2{
+        font-size: 1rem;
+    }
     
 
     .container .vermas{
         width: 300px;
+    }
+
+    .pantallascont img{
+        width: 150px;
+        border-radius: 2rem;
+    }
+
+    .cuentascont img{
+        width: 150px;
+        border-radius: 2rem;
+    }
+
+    .comboscont img{
+        width: 150px;
+        border-radius: 2rem;
     }
 
     
@@ -678,17 +794,6 @@ a.control_next {
         font-size: 0.7rem;
     }
 
-    .pantallascont img{
-        width: 100px;
-    }
-
-    .cuentascont img{
-        width: 100px;
-    }
-
-    .comboscont img{
-        width: 100px;
-    }
 
     /*CONTACTOS*/
 
@@ -756,7 +861,17 @@ a.control_next {
     
        }
     
+       figure:hover > div{
+        width: 100px;
+        margin: 20px;
+        padding: 1rem 0.5rem;
+        font-size: 0.5rem;
+        border-radius: 2rem;
+    }
 
+    figure:hover > div h2{
+        font-size: 0.8rem;
+    }
     
 
     .container .vermas{
