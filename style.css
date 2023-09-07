@@ -68,6 +68,81 @@ a:hover{
     max-width: 1240px;
     margin: 0 auto;
     flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container-all{
+    width: 100%;
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.container-all .infocont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.container-all .infocont img{
+    transition: .3s;
+}
+
+.container-all .infocont img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.container-all .infocont h1{
+    color: #2a2a2a;
+    margin-top: 20px;
+}
+
+.container-all .infocont p{
+    padding: 40px;
+    color:#2a2a2a;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-all .infocont .price{
+    padding: 40px;
+    text-align: center;
+}
+
+.container-all .infocont .price span,button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.container-all .infocont .price button{
+    padding: 5px 3px;
+    background-color: #ffa600;
+    border-radius: 5px;
+}
+
+.container-all .infocont .price button a{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+.container-all .infocont .price button:hover{
+    color: white;
+}
+
+.container-all .infocont img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.container-all .infocont .infocont-all {
+    width: 100%;
+    max-width: 600px;
 }
 
 .features{
@@ -121,7 +196,7 @@ figure{
     position: relative;
     transition: all 500ms ease-out;
 }
-figure div{
+figure a div{
     
     position: absolute;
     top:0%;
@@ -134,7 +209,7 @@ figure div{
     text-align: center;
 }
 
-figure:hover > div{
+figure:hover > a div{
     width: 300px;
     margin: 20px;
     border-radius:4rem;
@@ -145,7 +220,7 @@ figure:hover > div{
     padding: 6rem 2rem;
 }
 
-figure:hover > div p{
+figure:hover > a div p{
     text-align: initial;
 }
 
@@ -217,6 +292,13 @@ figure:hover > div p{
     -webkit-box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
 box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
+}
+
+.producto{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #ffa600;
+    color: #2a2a2a;
 }
 
 .cuentas{
@@ -313,11 +395,13 @@ box-shadow: -1px 3px 12px 0px rgba(0,0,0,0.75);
     margin: 20px;
 }
 
+
 footer p{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
 
 
 
@@ -446,13 +530,13 @@ a.control_next {
 .cajaredes img{
     width: 30px;
 }
-.container .telegram{
+.container-all .telegram{
     text-align: center;
     margin-top: 50px;
 
 }
 
-.container .telegram a{
+.container-all .telegram a{
     padding: 10px 30px;
     width: 700px;
     border-radius: 1rem;
@@ -462,7 +546,7 @@ a.control_next {
     font-size: 1.5rem;
 }
 
-.container .telegram img{
+.container-all .telegram img{
     width: 30px;
 }
 
@@ -558,7 +642,7 @@ a.control_next {
     
     }
 
-    figure:hover > div{
+    figure:hover > a div{
         width: 220px;
         margin: 20px;
         border-radius:4rem;
@@ -567,7 +651,7 @@ a.control_next {
         border-radius: 3rem;
     }
 
-    figure:hover > div h2{
+    figure:hover > a div h2{
         font-size: 1.5rem;
     }
     
@@ -648,7 +732,7 @@ a.control_next {
 
    }
 
-   figure:hover > div{
+   figure:hover > a div{
     width: 190px;
     margin: 20px;
     padding: 4rem 1rem;
@@ -656,7 +740,7 @@ a.control_next {
     border-radius: 3rem;
 }
 
-figure:hover > div h2{
+figure:hover > a div h2{
     font-size: 1.2rem;
 }
 
@@ -739,7 +823,7 @@ figure:hover > div h2{
         padding: 0 20px;
        }
     
-    figure:hover > div{
+    figure:hover > a div{
         width: 150px;
         margin: 20px;
         padding: 1rem 0.5rem;
@@ -747,7 +831,7 @@ figure:hover > div h2{
         border-radius: 2rem;
     }
 
-    figure:hover > div h2{
+    figure:hover > a div h2{
         font-size: 1rem;
     }
     
@@ -801,8 +885,8 @@ figure:hover > div h2{
         width: 30px ¡important;
     }
 
-    .container .telegram a{
-        font-size: 0.9rem;
+    .container-all .telegram a{
+        font-size: 0.8rem;
     }
     
     .cajaredes a{
@@ -861,7 +945,7 @@ figure:hover > div h2{
     
        }
     
-       figure:hover > div{
+       figure:hover > a div{
         width: 100px;
         margin: 20px;
         padding: 1rem 0.5rem;
@@ -869,7 +953,7 @@ figure:hover > div h2{
         border-radius: 2rem;
     }
 
-    figure:hover > div h2{
+    figure:hover > a div h2{
         font-size: 0.8rem;
     }
     
