@@ -750,6 +750,21 @@ figure:hover > a div h2{
         width: 600px;
     }
 
+
+    .container-all .infocont .infocont-all p{
+        padding: 5px 40px;
+        font-size: 1.3rem;
+
+    }
+
+    .container-all .infocont .infocont-all .price{
+        padding: 20px 40px 10px;
+    }
+
+    .container-all .infocont .infocont-all .price span{
+        font-size: 1.7rem;
+    }
+
     
 
     .pagosset div img{
